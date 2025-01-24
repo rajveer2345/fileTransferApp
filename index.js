@@ -6,6 +6,7 @@ const fs = require("fs");
 
 const app = express();
 app.use(cors());
+app.use(express.static(path.join(__dirname, "./client/dist")));
 
 // Storage configuration for multer
 const storage = multer.diskStorage({
