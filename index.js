@@ -3,6 +3,7 @@ const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
 const fs = require("fs");
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
@@ -69,7 +70,7 @@ if (!fs.existsSync(uploadDir)) {
 }
 
 // Start the server
-const PORT = 5000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
