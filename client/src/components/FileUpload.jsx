@@ -97,7 +97,7 @@ const FileUpload = () => {
         <div className="flex flex-col gap-2 w-full max-w-[600px]">
           {downloadLinks.map((file) => (
             <div className="w-full border border-green-400 rounded-md flex items-center justify-between">
-              <a href={`https://greenflag.onrender.com/uploads/${file}`} target="_blank" rel="noopener noreferrer">
+              <a href={`https://greenflag.onrender.com/download/${file}`} target="_blank" rel="noopener noreferrer">
                 <p className="truncate break-words text-sm text-gray-500 font-medium px-2 hover:text-green-600">
                   {file}
                 </p>
